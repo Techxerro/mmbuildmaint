@@ -1,0 +1,150 @@
+.contact{
+    background:url('../Assets/img/contactbg.png');
+    background-size: cover;
+}
+
+.contact h2{
+    font-size:45px;
+    font-weight: bold;
+    padding-bottom:20px;
+}
+
+.contact p{
+    text-transform: capitalize!important;
+    font-size:18px!important;
+}
+
+.contact-info{
+    padding:100px 0;
+}
+
+.contact-info .value-box{
+    background: #FEF5CC;
+    border:1px solid #FCC93A;
+    padding:25px 30px 35px;
+    border-radius:20px;
+    display: grid;
+    grid-template-columns: 20% 80%;
+}
+
+.contact-info .value-box svg{
+    padding:10px;
+    width:50px;
+    height:50px;
+    border-radius:10px;    
+    box-shadow: 0 0px 10px #00000020;
+}
+
+.contact-info .value-box h3{
+    padding-bottom: 10px;
+    font-weight:600;
+    font-size: 24px;
+}
+
+.contact-info .value-box p{
+    font-size:21px!important;
+}
+
+.contact-form{
+    padding:80px 0;
+    background: #FEF5CC;
+}
+
+.contact-form .contact-info h4{
+    padding-bottom: 30px;
+}
+
+.contact-form .contact-info .d-grid {
+    padding-bottom:25px;
+}
+
+.contact-form h3{
+    font-size:32px;
+    font-weight:bold;
+    padding-bottom:15px;
+}
+
+.contact-form form{
+    padding: 0;
+}
+
+.contact-form form label{
+    width:100%;
+    padding:10px 0;
+    font-size:18px;
+}
+
+.contact-form form label span{
+    padding-bottom:10px;
+}
+
+.contact-form form label input,label textarea{
+    width:100%;
+    padding:15px 0px;
+    margin-top: 10px;
+    border-radius: 0px;
+    border:none;
+    border-bottom:1px solid #00000034;
+    background: transparent;
+    color:#000;
+}
+
+.contact-form form label input::placeholder,label textarea::placeholder{
+    color:#000;
+}
+
+
+.contact-form  input[type="submit"]{
+    width:200px;
+    background: #fff;
+    color:#000;
+    padding:12px 10px;
+    text-transform: uppercase;
+    border:1px solid #000;
+    margin-top:20px;
+    border-radius:40px;
+}
+
+.contact-form input[type="submit"]:hover{
+    background: #000;
+    color:#fff;
+}
+
+
+@media (min-width: 480px) and (max-width: 767px) {
+    .contact-info{
+        padding:40px 20px;
+    }
+    .contact-info .value-box{
+        grid-template-columns: auto;
+        padding:15px 20px;
+        margin-bottom: 10px;
+    }
+
+    .contact-info .value-box svg{
+        margin-bottom:20px;
+    }
+
+    .contact-form{
+        padding:40px 20px;
+    }
+
+}
+@media (min-width: 320px) and (max-width: 480px) {
+    .contact-form{
+        padding:50px 10px;
+    }
+
+    .contact-form .contact-info{
+        padding:30px 20px;
+    }
+
+    .contact-form form{
+        padding:20px 10px;
+    }
+    .contact-info .value-box{
+        margin-bottom:20px;
+    }
+
+
+}

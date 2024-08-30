@@ -1,0 +1,176 @@
+.aboutus{
+    background: url('../Assets/img/aboutbg.png');
+    background-size:cover;
+    background-position: bottom;
+}
+.aboutus h2{
+    font-size:45px;
+    font-weight: bold;
+    padding-bottom:20px;
+}
+
+.aboutus p{
+    text-transform: capitalize!important;
+    font-size:18px!important;
+}
+
+.ourstory{
+    padding:80px 0;
+}
+
+.ourstory .imagegrid{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    gap:30px;
+}
+
+.btnstyle2{
+    padding:10px 35px;
+    border:none;
+    border-radius: 25px;
+    background-color: #FEF5CC;
+}
+
+.story-img{
+    gap:25px;
+    padding-bottom: 30px;
+}
+
+.story-content{
+    padding-left:0px;
+    display: flex;
+    align-items: center;
+}
+
+.story-content h3{
+    font-size:30px;
+    padding-bottom: 10px;
+}
+
+.story-content span{
+    text-transform: uppercase;
+
+}
+.story-content h2{
+    text-transform: capitalize;
+}
+
+
+.note{
+    background-color: #FEF5CC;
+    padding:120px 0;
+    position: relative;
+    height:70vh;
+}
+
+.note img{
+    position: absolute;
+    right:5%;
+}
+
+.note h3{
+    font-size:35px;
+    font-weight:bold;
+}
+
+
+.our-value{
+    padding:200px 0 80px;
+}
+
+.our-value .value-box{
+    display: grid;
+    grid-template-columns: 15% 85%;
+    background: #FEF5CC;
+    border-radius: 40px;
+    padding:30px 30px;
+    margin-top:50px;
+    min-height:250px;
+}
+
+.our-value .value-box h3{
+    font-size:22px;
+    font-weight: bold;
+}
+
+.our-value .value-box p{
+    margin:0;
+}
+
+@media (min-width: 480px) and (max-width: 767px) {
+    .ourstory,.note,.our-value{
+        padding:50px 25px;
+    }
+
+    .note{
+        height:50dvh;
+    }
+
+    .ourstory img{
+        width:100%;
+    }
+
+    .note img{
+        display: none;
+    }
+
+    .our-value .value-box{
+        grid-template-columns: auto;
+        gap:10px;
+    }
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+    .ourstory{
+        padding:40px 10px;  
+    }
+    
+    .ourstory img{
+        width: 100%;
+    }
+    
+    .story-content{
+        padding-left:20px;
+        padding-top:20px;
+    }
+    .note{
+        padding:50px 10px;
+        height:55vh;
+    }
+
+    .note img{
+        width:100%;
+        max-height:300px;
+        object-fit: cover;
+        position: relative;
+        display:none
+    }
+
+    .our-mission{
+        padding:50px 15px; 
+    }
+
+    .our-mission img{
+        padding-bottom:20px;
+    }
+
+    .our-value{
+        padding:50px 20px;
+    }
+    .our-value .value-box{
+        margin-top:20px;
+        grid-template-columns: auto;
+        gap:15px;
+    }
+
+    .our-value h3{
+        font-size:35px;
+        padding-bottom:15px;
+    }
+
+    .thumbnail{
+        height:70vh;
+    }
+}
+
+

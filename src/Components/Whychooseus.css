@@ -1,0 +1,242 @@
+.thumbnail{
+    padding: 120px 0;
+    text-align: center;
+    color:#fff;
+}
+
+.whyus{
+    background-image: url('../Assets//img/aboutusbg.png') ;
+    background-size: cover;
+    background-position: bottom;
+}
+
+.whyus h2{
+    font-size:45px;
+    font-weight: bold;
+    padding-bottom:20px;
+}
+
+.whyus p{
+    text-transform: capitalize!important;
+    font-size:18px!important;
+}
+
+
+.thumbnail p{
+    text-transform: uppercase;
+    font-weight: 200;
+    font-size: 14px;
+
+}
+.box-container {
+    padding:100px 0;
+}
+/* .box-container .col-3:first-child .box{
+    background-color: #1B8842;
+    color:#fff;
+    padding:25px;
+    border-radius: 10px;
+} */
+
+
+.box-container .title{
+    padding-bottom: 20px;
+    text-align: center;
+}
+
+.box-container .title h3{
+    font-size:35px;
+    font-weight: 800;
+}
+
+.box-container .detail-left{
+    text-align: right;
+}
+.box-container .detail-right{
+    text-align: left;
+}
+
+.box-container .detail-left svg,.box-container .detail-right svg{
+    border-radius: 100%;
+    background: #FEF5CC;
+    padding:5px;
+    scale:1.1;
+    margin-bottom: 10px;
+}
+
+.box-container .detail-left h3,.detail-right h3{
+    font-size:22px; 
+    font-weight: 600;
+}
+
+.box-container #bestaboutusimg{
+    padding:15px;
+    border-radius: 100%;
+    border:1px solid #FCC93A;
+}
+
+.box-container .box{
+    background-color: #D1E7D9;
+    position: relative;
+    top:0;
+    padding:25px;
+    border-radius: 10px;
+    height:250px;
+    cursor:pointer;
+}
+.box-container .box:hover{
+    background-color: #1B8842;
+    top:-15px;
+    color:#fff;
+    transition: all 0.35s;
+}
+
+.box-container .box:hover svg path{
+    fill:#fff;
+}
+
+.box-container .box:hover .umberella path{
+    fill:none!important;
+    stroke:#fff;
+}
+
+.box-container .box svg{
+    margin-bottom: 10px;
+}
+
+.box-container .box h3{
+    padding-bottom:15px;
+}
+
+.box-container .box p{
+    font-size:17px;
+}
+
+h2{
+    font-size: 55px;
+}
+
+.priority-section{
+    background: url('../Assets/img/Rectangle\ 33\ \(1\).png');
+    background-size: cover;
+    color:#fff;
+}
+
+.priority-section .title h3{
+    font-size:32px;
+    padding-bottom:30px;
+    position: relative;
+}
+
+.priority-section .title h3::after{
+    content: '';
+    background: #fff;
+    position: absolute;
+    width:25%;
+    height:1.5px;
+    left:35%;
+    bottom:10%;
+}
+.priority-section .title p{
+    font-size:25px;
+    font-weight: 300;
+    padding-top: 20px;
+}
+
+.priority-section .d-flex{
+    gap:70px;
+    padding:50px 0;
+}
+
+.priority-section .box svg{
+    margin-bottom:20px;
+}
+
+.priority-section .box span{
+    font-weight:200;
+    font-size:25px;
+    width:100%;
+    display: block;
+}
+
+.expection-section{
+    padding:100px 0;
+    background: #FEF5CC;
+}
+
+.expection-section h3{
+    font-size:32px;
+    font-weight: bold;
+    padding:0 30px 20px 0
+}
+
+
+@media (min-width: 480px) and (max-width: 767px) {
+    .expection-section{
+        padding:50px 20px;
+    }
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+    .box-container{
+        padding:50px 10px;
+    }
+
+    .box-container .box{
+        margin-bottom: 10px;
+    }
+
+    .expection-section{
+        padding:50px 10px;
+    }
+
+    .expection-section img{
+        padding-bottom:20px;
+        width:100%;
+    }
+
+    .expection-section h2{
+        font-size: 35px!important;
+    }
+
+    .box-container .detail-left{
+        text-align: left;
+    }
+    .box-container #bestaboutusimg{
+        display: none;
+    }
+
+    .priority-section{
+        padding:50px 15px;
+    }
+
+    .priority-section .title h3{
+        font-size:25px;
+    }
+
+    .priority-section .title p{
+        padding-top:0;
+        font-size:18px;
+    }
+
+    .priority-section .d-flex{
+        /* display: grid!important; */
+        column-gap:10px;
+        row-gap: 20px;
+        padding:20px 0;
+        grid-template-columns: auto ;
+        
+    }
+    .priority-section .box span{
+        font-size:15px;
+        font-weight:400;
+    }
+    .priority-section .box svg{
+        margin-bottom: 10px;
+    }
+
+    .priority-section p{
+        font-size:17px;
+    }
+
+}

@@ -1,0 +1,923 @@
+.hero-slider{
+    background: url('../Assets/img/Banner1.jpg');
+    background-size: cover;
+    background-position: top center;
+}
+
+.hero-slider .row{
+    padding:0 100px;
+}
+
+.hero-slider .whitebox{
+    background: #fff;
+    padding:40px;
+    color:#000;
+    width:75%;
+}
+
+@media (min-width:1620px) {
+    
+    .hero-slider .whitebox{
+        background: #fff;
+        padding:40px;
+        color:#000;
+        width:50%;
+    }
+}
+
+.hero-slider .whitebox h2{
+    position: relative;
+    font-size:65px;
+}
+.hero-slider .whitebox h2:nth-child(2){
+    padding-left:32%;
+}
+
+.hero-slider .whitebox h2:nth-child(2):before{
+    content:'';
+    background:#000;
+    height:5px;
+    width:30%;
+    position:absolute;
+    top:50%;
+    left:0;
+}
+
+.checklist{
+    background-color: #FADC5550;
+    padding: 50px 0;
+}
+
+.checklist-wrapper{
+    display: flex;
+    gap:8%;
+}
+
+.checklist-wrapper .d-flex{
+    gap:12px;
+}
+
+.checklist-wrapper .d-flex img{
+    width:20px;
+    height:18px;
+}
+
+/***********************Process Section************************/
+.process-section{
+    padding:100px 0;
+}
+
+.process-section .title{
+    text-align: center;
+}
+
+.process-section .title h3{
+    font-size:35px;
+    font-weight:bold;
+    padding-bottom:20px;
+}
+
+.process-section .title p{
+    padding-bottom: 20px;
+}
+
+.process-section .process-wrapper{
+    height:500px;
+    position: relative;
+    border-radius: 50px;
+    color:#fff;
+    
+}
+
+.process-section .process-wrapper:hover{
+    box-shadow: 0 0 15px #00000070;  
+}
+
+
+.process-section .process-wrapper div{
+    position: absolute;
+    padding:20px;
+    bottom:10px;
+}
+
+.process-section .step1{
+    background: url('../Assets/img/Rectangle\ 9.png') ;
+    background-size: cover;
+    background-position: center;
+}
+
+.process-section .step2{
+    background: url('../Assets/img/Rectangle\ 10.png') ;
+    background-size: cover;
+    background-position: center;
+}
+.process-section .step3{
+    background: url('../Assets/img/Rectangle\ 11.png') ;
+    background-size: cover;
+    background-position: center;
+}
+
+.process-section .process-wrapper h3{
+    font-weight:bold;
+}
+
+.whyus-section{
+    background-color: #FADC5550;
+}
+
+    .whyus-section .container-fluid{
+        max-width:1500px!important;
+    } 
+
+.whyus-section .whyus-content{
+    padding:100px!important;
+}
+
+.whyus-section .whyus-content h3{
+    font-size:35px;
+    padding-bottom:25px;
+}
+
+.whyus-section .benfit-bg{
+    background-image: url('../Assets/img/Rectangle\ 12.png');
+    background-size: cover;
+    position: relative;
+}
+
+.whyus-section .benfit-bg img{
+    position: absolute;
+    top:50%;
+    left:-15%;
+}
+
+.whyus-section .whyus-content ul{
+    padding-bottom:20px;
+    list-style-image: url('../Assets/img/check.png');
+    padding-left:20px;
+}
+
+.whyus-section .whyus-content ul li{
+    font-size: 18px;
+    padding-bottom: 10px;
+
+}
+
+.whyus-section .buttonstyle{
+    padding:10px 35px;
+    background-color: #fff;
+    border-radius: 40px;
+    border:1px solid #000;
+}
+
+.whyus-section .buttonstyle a{
+    color:#000;
+}
+
+.whyus-section .buttonstyle:hover{
+    background-color: #000;
+    color:#fff;
+    transition: background-color 200ms ease-in-out;
+}
+
+.whyus-section .buttonstyle:hover a{
+    color:#fff;
+    transition: 200ms ease-in-out;
+}
+
+
+.colorgreen{
+    color: #158842!important;;
+}
+
+.greenbtn,.greenbtn3{
+    background:#158842;
+    font-size:13.5px;
+    color:#fff;
+    border:none;
+    padding:18px 35px;
+    min-width:180px;
+    text-transform: uppercase;
+    position: relative;
+    z-index: 9;
+}
+
+.greenbtn:hover{
+    background-color: #99e0b3;
+    color:#000;
+    transition: ease 1s;
+}
+
+.greenbtn svg{
+    position: absolute;
+    z-index:9;
+    scale:0;
+    top:-30px;
+    left:110px;
+    transition: all 0.3s;
+}
+.greenbtn svg path{
+    fill:#000;
+}
+
+.greenbtn:hover svg{
+    scale:0.35;
+}
+.greenbtn3{
+    display: flex;
+    gap:10px;
+    position: relative;
+}
+
+.greenbtn3::after{
+    content: 'Get Free Consultation';
+    position: relative;
+    /* top:50%;
+    left:50%; */
+    width: 100%;
+    transition: 0.7s;
+    
+}
+
+.greenbtn3 svg{    
+    position: absolute;
+    right:10px;
+    scale:0;
+}
+
+.greenbtn3:hover::after{
+    left:-8%;
+    transition: 0.7s;
+}
+.greenbtn3:hover svg{   
+    padding-top:5px;
+    scale:0.8;
+    transition: all 0.7s;
+}
+
+.Why-section{
+    padding:100px 0;
+}
+
+.Why-section h2{
+    font-weight:400;
+    font-size:50px;
+    padding-bottom:10px;
+}
+
+.Why-section h4{
+    font-weight: 400;
+    font-size:30px;
+    padding-bottom:10px;
+}
+
+.Projects{
+    padding:100px 0;
+    background-color: #15884220;
+}
+
+.Projects h2{
+    font-weight:400;
+    font-size:50px;
+    padding-bottom:10px;
+}
+
+.services{
+    padding:100px 0;
+}
+
+.services h2{
+    font-weight:400;
+    font-size:50px;
+    padding-bottom:10px;
+}
+
+.services p{
+    font-size:22px;
+}
+
+.services .services-wrapper{
+    min-height:450px;
+    height:450px;
+    background-size: cover!important;
+    padding:0 25px;
+    display: grid;
+    align-items: end;
+    gap:10px;
+    color:#fff;
+    margin:25px 0;
+    border-radius: 3px;
+    scale:1;
+    transition: all 0.7s;
+}
+
+.services .services-wrapper:hover{
+    scale:1.035;
+    transition: all 0.7s;
+    opacity: 1;
+    cursor: pointer;
+}
+ 
+.services .service-outer-wrapper:hover .services-wrapper:not(:hover){
+    scale:0.95;
+    transition: all 0.7s;
+    opacity: 0.6;
+}
+.services-wrapper a{
+    color:#fff;
+    transition:all 0.35s;
+}
+.services-wrapper:hover h3{
+    color:#fff;
+    transition:all 0.35s;
+}
+.services-wrapper:hover h3 svg{
+    margin-left:15px;
+    transition:all 0.35s;
+}
+
+.services-wrapper:hover h3 svg path{
+    fill:#fff000;
+    transition:all 0.35s;
+}
+.services .services-wrapper h3{
+    font-size: 24px;
+    font-weight:bold;
+    display: grid;
+    grid-template-columns: auto auto;
+    padding-right:30px;
+    align-items: center;
+    padding-bottom: 20px;
+}
+
+.services .services-wrapper p{
+    font-size:18px;
+    font-weight: 200!important;
+}
+
+.whyus-section .claims{
+    display: flex;
+}
+
+.whyus-section .claims .d-grid img{
+    transition:1s
+}
+
+.whyus-section .claims .d-grid:hover img{
+    position: relative;
+    bottom:5px;
+    transition:1s
+}
+
+.pad100{
+    padding:100px 0;
+}
+h2{
+    font-weight:400;
+    font-size:50px;
+    padding-bottom:10px;
+}
+
+p{
+    font-size:18px;
+}
+
+
+.bggreen{
+    background-color: #15884220;
+}
+
+.testimonials{
+    position: relative;
+    background: #fef5cc;
+}
+
+.testimonials h4{
+    font-size: 30px;
+    font-weight: 600;
+    padding-bottom:15px
+}
+
+.testimonials .quote1{
+    position: absolute;
+    left:21%;
+    top:16%;
+    animation: slideUp 0.7s linear;
+}
+
+.testimonials .quote2{
+    position: absolute;
+    right:12%;
+    bottom:15%;
+    scale:0.4;
+    animation: slideUp 1s linear;
+
+}
+
+.testimonials .owl-nav{
+    display: block!important;
+}
+
+.testimonials .owl-nav .owl-prev{
+    position: absolute;
+    top:35%;
+    left:1%;
+    background: #fff!important;
+    border-radius: 100px;
+    width:40px;
+    height: 40px;
+    box-shadow:0 5px 10px #00000020;
+}
+
+.testimonials .owl-nav .owl-next{
+    position: absolute;
+    top:35%;
+    right:1%;
+    background: #fff!important;
+    border-radius: 100px;
+    width:40px;
+    height: 40px;
+    box-shadow:0 5px 10px #00000020;
+}
+
+@keyframes slideUp {
+    0%{
+        opacity: 0;
+        margin-top: 10px;
+    }
+    100%{
+        opacity: 1;
+        margin-top: 0;
+    }
+}
+
+
+.testimonials-wrapper{
+    background-color: #fefae5;
+    color:#000;
+    width:100vw;
+    border-radius:5px;
+    padding:40px 30px 20px;
+    position: relative;
+    height:450px;
+    text-align: center;
+    border-radius: 30px;
+}
+
+.testimonials-wrapper .vector{
+    position: absolute;
+    top:25%;
+    left:10%;
+    width:5%!important;
+}
+
+.testimonials-wrapper .testimonials-content{
+    padding:30px 140px;
+    text-align: center;
+}
+
+.testimonials-wrapper .testimonials-content p{
+    color:#767169;
+    padding-bottom: 20px;
+}
+
+.testimonials-wrapper .testimonials-content h4{
+    font-weight: bold;
+}
+
+.testimonials-wrapper .profile{
+    width:100px!important;
+    text-align: center;
+    display: inline!important;
+}
+
+.testimonials .owl-item{
+    display: flex;
+    justify-content: center;
+}
+
+.Projects .item{
+    padding:10px 0;
+}
+
+.Projects .item img{
+    width:100%!important;
+    height:55vh;
+    object-fit: cover;
+}
+
+.Projects .owl-item{
+    transition:all 0.45s;
+}
+
+
+.Projects .owl-carousel .owl-nav{
+    float:right;
+    display: none;
+}
+
+.Projects .owl-item:hover{
+    transition: all 0.45s;
+    transform: perspective(800px) rotateY(-10deg);
+}
+
+.Projects .item{
+    position: relative;
+}
+
+.Projects .item h3{
+    position: absolute;
+    bottom:5%;
+    color:#fff;
+    left:5%;
+    font-weight:300;
+}
+
+.videoBox{
+    position:absolute;
+    bottom:-20px;
+    right:0;
+    box-shadow:0 10px 10px #00000023;
+    background:#fff;
+    padding:20px 30px;
+    border-radius:20px;
+    width:380px;
+}
+
+.btnhover .greenbtn:hover{
+    scale:0.95;
+    transition: all .35s;
+    font-weight: 500;
+}
+
+.btn-container{
+    display: flex;
+}
+
+.services .mobile-slider{
+    display: none;
+}
+
+.cleaning-services{
+    padding:100px 0;
+}
+
+.cleaning-services h3{
+    font-size:35px;
+    font-weight:bold;
+    padding-bottom:50px;
+}
+
+.cleaning-services .stats-box{
+    padding:60px 30px;
+    border-radius:30px;
+    background: #f7f3f3;
+}
+
+.cleaning-services .stats-box:hover{
+    background: #fef5cc!important;
+}
+
+.cleaning-services .stats-box h2{
+    font-size: 75px;
+    font-weight: bold;
+}
+.cleaning-services .stats-box h4{
+    font-weight: 600;
+}
+
+.promotion-section {
+    background: url('../Assets/img/Rectangle\ 29.png');
+    background-size: cover;
+}
+
+.promotion-section .whitebox{
+    background: #fff;
+    padding:60px 120px;
+}
+
+.promotion-section .whitebox h2{
+    font-size:40px;
+    font-weight: 600;
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+  
+    /* CSS */
+
+    .hero-slider .row{
+        padding:0 20px;
+        height:65vh!important
+    }
+
+    .hero-slider .whitebox{
+        width:100%;
+        padding:20px 10px;
+    }
+
+    .hero-slider .whitebox h2:nth-child(2){
+        padding-left:25%;
+    }
+
+    .hero-slider .whitebox h2:nth-child(2):before{
+        width:20%;
+        height:3px;
+    }
+
+    .checklist{
+        padding:25px 5px;
+    }
+
+    .checklist .checklist-wrapper{
+        display: grid;
+        grid-template-columns: auto auto;
+    }
+
+    .checklist-wrapper .d-flex{
+        align-items: start!important;
+    }
+    
+    .checklist-wrapper .d-flex img {
+        width: 20px;
+        height: 20px;
+        padding-top: 5px;
+    }
+
+    .slider-content h2{
+        font-size:26px!important;
+    }
+
+    .slider-content form{
+        display: block!important;
+    }
+
+    .slider-content form select{
+        background: #fff;
+        border-radius: 0;
+    }
+
+    .slider-content form .d-flex{
+        margin-bottom:10px;
+        padding:5px;
+        background-color: #fff;
+    }
+
+    .slider-content form input[type="submit"]{
+        width:55%!important;
+        font-size:13px;
+        padding:20px 10px;
+        border-radius: 0;
+    }
+
+    .slider-content form select {
+        text-transform: uppercase;
+        font-size:14px;
+    }
+    
+    .slider-content form input,.slider-content form select{
+        width:100%;
+        padding: 15px 0;
+    }
+
+    .process-section{
+        padding:50px 15px;
+    }
+
+    .process-section .title h3{
+        font-size: 25px;
+    }
+
+    .process-section .process-wrapper{
+        height:450px;
+        margin-bottom:30px;
+    }
+
+    .whyus-section .whyus-content{
+        padding:50px 15px!important;
+    }
+
+    .whyus-section .whyus-content h3{
+        padding-bottom:10px;
+    }
+
+    .whyus-section .benfit-bg img{
+        display: none;
+    }
+
+    .testimonials-wrapper{
+        height:100%!important;
+    }
+
+    .testimonials-wrapper .profile{
+        width:75px!important;
+    }
+
+    .testimonials-wrapper .testimonials-content p{
+        font-size:16px;
+        text-align: justify;
+        padding:0;
+    }
+
+    .testimonials-wrapper .testimonials-content h4{
+        font-size:22px;
+        padding:0;
+        margin:0;
+    }
+
+    .Why-section,.Projects,.services{
+        padding:50px 10px;
+    }
+
+    .testimonials{
+        padding:50px 0 100px!important;
+    }
+
+    .Projects .owl-carousel{
+        padding-top:20px;
+    }
+
+    .Projects .owl-carousel .owl-nav{
+        float:right;
+        display: block;
+    }
+
+    .Projects .owl-carousel .owl-nav button{
+        margin: 5px!important;
+    }
+
+    .services .service-outer-wrapper{
+        display: none;
+    }
+
+    .services .mobile-slider{
+        display: block;
+    }
+
+    .services .mobile-slider .owl-nav{
+        text-align: center;
+    }   
+
+    .services .mobile-slider .owl-nav button{
+        margin:22px;
+    }
+
+    .services p{
+        font-size:16px;
+    }
+
+    .services .services-wrapper{
+        min-height: 350px;
+        height:350px;
+    }
+
+    .Why-section .video-container{
+        display: grid!important;
+        gap:10px!important;
+        grid-template-columns: 50% 50%;
+        padding-bottom: 25px;
+    }
+
+    .Why-section .d-flex video{
+        width:250px;
+        height:400px!important;
+    }
+
+    .whyus-img{
+        height:120px!important;
+        margin-top:20px;
+    }
+    
+    .testimonials-wrapper{
+        width:85vw;
+        height:75vh;
+        padding:20px 10px;
+    }  
+
+    .testimonials-wrapper .testimonials-content{
+        padding:15px;
+        bottom:5%;
+    }
+
+    .testimonials .owl-nav .owl-next{
+        right:25%;
+        top:100%;
+    }
+    .testimonials .owl-nav .owl-prev{
+        left:25%;
+        top:100%;
+    }
+
+    .videoBox{
+        position: relative;
+        bottom:0;
+        width:90vw;
+        padding: 20px;
+    }
+
+    .videoBox p{
+        font-size:16px;
+    }
+
+    .whyus-section{
+        padding:20px 0 80px;
+    }
+
+    .whyus-section #whyusimg{
+        width:100%;
+        padding-bottom:20px;
+    }
+
+    .whyus-section .claims{
+        display: grid;
+        grid-template-columns: auto auto;
+    }
+
+
+    .cleaning-services .btn-container{
+        padding:20px;
+        display:grid;
+        grid-template-columns: auto;
+
+    }
+
+    h2{
+        font-size:40px!important;
+    }
+
+    .slider-content h2 span{
+        font-weight:500!important;
+    }
+
+    .cleaning-services{
+        padding:50px 15px;
+    }
+
+    .cleaning-services h3{
+        font-size:22px;
+        padding-bottom: 25px;
+    }
+
+    .cleaning-services .stats-box{
+        padding:40px 20px;
+        margin:15px 0;
+    }
+
+    .cleaning-services .stats-box h2{
+        font-size:45px;
+    }
+    
+    .promotion-section{
+        padding:50px 15px;
+    }
+
+    .promotion-section .whitebox{
+        padding:40px 15px;
+    }
+
+    .promotion-section .whitebox h2{
+        font-size:22px!important;
+    }
+
+    .contactsec{
+        padding:50px 15px!important;
+    }
+
+    .contactsec .d-flex{
+        display: grid!important;
+    }
+
+    .contactsec form label input, .contactsec form select{
+        margin:0!important;
+        margin-bottom:20px!important;
+    }
+    .contactsec .title h3{
+        padding-bottom:10px;
+    }
+}
+
+
+
+
+@media (min-width: 768px) and (max-width: 1024px) {
+
+    .whyus-section .whyus-content{
+        padding:40px!important
+    }
+
+    .whyus-section .benfit-bg img {
+        width:60%;
+        top: 65%!important;
+        left: -15%!important;
+    }
+
+    .testimonials-wrapper .testimonials-content{
+        padding:30px 30px!important;
+    }
+
+    .testimonials-wrapper .testimonials-content p{
+        font-size:16px!important;
+    }
+
+    .cleaning-services .stats-box{
+        margin:10px 0;
+    }
+}

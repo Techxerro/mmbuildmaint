@@ -1,0 +1,53 @@
+.contactsec{
+    background: #fef5cc;
+    padding:100px 0;
+}
+
+.contactsec .title{
+    text-align: center;
+}
+
+.contactsec .title h3{
+    font-size: 32px;
+    font-weight: 600;
+}
+
+.contactsec form label{
+    width:100%;
+}
+
+.contactsec form .d-flex{
+    gap:20px;
+}
+
+.contactsec form label input, .contactsec form select{
+    width:100%;
+    padding:10px 5px;
+    background:transparent;
+    border:none;
+    border-bottom:1px solid #000;
+    margin:40px 0;
+    color:#000;
+}
+
+.contactsec form label input::placeholder, .contactsec form select::placeholder{
+    color:#000;
+}
+
+.contactsec form label input::placeholder{
+    color:#000;
+    font-size:18px
+}
+
+.contactsec form input[type="submit"]{
+    background: #fff;
+    border:none;
+    padding:12px 50px;
+    border-radius: 30px;
+}
+
+
+.contactsec form input[type="submit"]:hover{
+    background-color: black;
+    color:#fff;
+} 
