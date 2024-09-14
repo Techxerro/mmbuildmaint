@@ -168,7 +168,7 @@ const Header = () => {
                         >
                           <ul>
                             <li>
-                              <a href="/services">
+                              <a href="/services/toilet-cleaning">
                                 <img
                                   src={require("../../Assets/img/toilet-cleaning.png")}
                                   alt="Toilet Cleaning"
@@ -195,7 +195,7 @@ const Header = () => {
                               </a>
                             </li>
                             <li>
-                              <a href="/services">
+                              <a href="/services/commercial-carpet-cleaning">
                                 <img
                                   src={require("../../Assets/img/carpet-cleaning.png")}
                                   alt="Commercial carpet cleaning"
@@ -206,7 +206,7 @@ const Header = () => {
                           </ul>
                           <ul>
                             <li>
-                              <a href="/services">
+                              <a href="/services/pressure-washing">
                                 <img
                                   src={require("../../Assets/img/pressure-washing.png")}
                                   alt="Pressure washing"

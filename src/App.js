@@ -15,6 +15,9 @@ import Floorcleaning from "./Components/Services/Floorcleaning";
 import Porterservice from "./Components/Services/Porterservice";
 import Officecleaning from "./Components/Services/Officecleaning";
 import Medicalcleaning from "./Components/Services/Medicalcleaning";
+import Toiletcleaning from "./Components/Services/Toiletcleaning";
+import PressureWashing from "./Components/Services/PressureWashing";
+import Carpetcleaning from "./Components/Services/Carpetcleaning";
 
 function App() {
   return (
@@ -24,7 +27,6 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
           <Route path="/Why-choose-us" element={<WhyChooseUs />} />
-
           <Route path="/contact-us" element={<Contact />} />
           <Route path="/services" element={<Services />} />
           <Route
@@ -39,9 +41,20 @@ function App() {
           />
           <Route
             path="/services/medical-cleaning"
-            element={<Medicalcleaning/>}
+            element={<Medicalcleaning />}
           />
-
+          <Route
+            path="/services/toilet-cleaning"
+            element={<Toiletcleaning />}
+          />
+          <Route
+            path="/services/pressure-washing"
+            element={<PressureWashing />}
+          />
+          <Route
+            path="/services/commercial-carpet-cleaning"
+            element={<Carpetcleaning />}
+          />
           <Route path="/privacy-policy" element={<PrivacyPolicy />} />
           <Route path="/clients" element={<Clients />} />
         </Routes>

@@ -13,7 +13,7 @@ const ServicesData = [
     img: service1,
     head: "Toilet Cleaning",
     subtitle: "Revitalize exteriors with the power of high-pressure cleaning.",
-    link: "/services#toilet-cleaning",
+    link: "/services/toilet-cleaning",
   },
   {
     id: 2,
@@ -37,7 +37,7 @@ const ServicesData = [
     head: "Commercial carpet cleaning",
     subtitle:
       "Elevate your business's image with our professional commercial cleaning solutions.",
-    link: "/services#commercial-carpet-cleaning",
+    link: "/services/commercial-carpet-cleaning",
   },
   {
     id: 5,
@@ -45,7 +45,7 @@ const ServicesData = [
     head: "Pressure washing",
     subtitle:
       "Efficient and thorough, our basic cleaning keeps your space tidy and inviting.",
-    link: "/services#pressure-washing",
+    link: "/services/pressure-washing",
   },
   {
     id: 6,
