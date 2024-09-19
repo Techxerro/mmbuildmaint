@@ -38,7 +38,7 @@ const Footer = () =>{
                                     <span>
                                         Email Address
                                         <br/>
-                                        <a href="mailto:info@mmbuiltmaint.com">info@mmbuiltmaint.com</a>
+                                        <a href="mailto:info@mmbuildmaint.com">info@mmbuildmaint.com</a>
                                     </span>
                                 </div>           
                              </div>

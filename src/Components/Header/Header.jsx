@@ -95,7 +95,7 @@ const Header = () => {
               </div>
               <div className="col-xl-6 col-lg-6 col-md-6 col-sm-6 info align-items-center">
                 <span>
-                  <a href="mailto:okcuptowncleaning@gmail.com">
+                  <a href="mailto:info@mmbuildmaint.com">
                     <svg
                       width="24"
                       height="24"
@@ -108,7 +108,7 @@ const Header = () => {
                         fill="#fff000"
                       />
                     </svg>
-                    info@mmbuildmaint@gmail.com
+                    info@mmbuildmaint.com
                   </a>
                 </span>
                 <span style={{ display: "flex" }}>

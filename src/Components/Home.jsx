@@ -70,7 +70,6 @@ const Home = () => {
           name="description"
           content="MM Build & Maintenance provides reliable cleaning and maintenance services for homes. Enjoy top-quality, efficient solutions tailored to your needs."
         />
-      
       </Helmet>
       <Header />
       <section className="hero-slider">
