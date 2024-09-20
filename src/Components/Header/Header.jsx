@@ -246,12 +246,12 @@ const Header = () => {
 
                         <ul className="abtintro">
                           <li>
-                            <div>50+ Years</div>
+                            <div>8+ Years</div>
                             <div>Experience</div>
                           </li>
                           <li>
-                            <div>20+ </div>
-                            <div>Country Served</div>
+                            <div>5-Star</div>
+                            <div> Rated Service</div>
                           </li>
                           <li>
                             <div>1000+ </div>

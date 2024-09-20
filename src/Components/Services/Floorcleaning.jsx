@@ -8,11 +8,33 @@ import ContactSection from "../Contactsection";
 import { Helmet } from "react-helmet";
 
 function Floorcleaning() {
+  const services = [
+    {
+      title: "Hardwood Cleaning",
+      description:
+        "We remove dirt and polish your hardwood floors for a lasting shine.",
+    },
+    {
+      title: "Tile & Grout Cleaning",
+      description:
+        "Deep cleaning of tile and grout to eliminate stains and restore color.",
+    },
+    {
+      title: "Vinyl Floor Care",
+      description:
+        "Restore the look of vinyl floors by removing scuffs and scratches.",
+    },
+    {
+      title: "Stain Removal",
+      description:
+        "Safe, effective solutions to remove tough stains and odors.",
+    },
+  ];
   return (
     <>
       <Helmet>
         <title>
-        Professional Floor Cleaning Services | MM Build & Maintenance
+          Professional Floor Cleaning Services | MM Build & Maintenance
         </title>
         <meta
           name="description"
@@ -35,7 +57,7 @@ function Floorcleaning() {
       <section className="servicetab-section" style={{ padding: "100px 0" }}>
         <div className="container">
           <div className="row">
-            <div className="col-xl-4 col-lg-4 col-md-12 col-12">
+            {/* <div className="col-xl-4 col-lg-4 col-md-12 col-12">
               <div className="tab-contain">
                 <h3>Categories</h3>
                 {ServicesData.map((tab, index) => (
@@ -63,25 +85,45 @@ function Floorcleaning() {
                   <button className="booknow">Book Now</button>
                 </a>
               </div>
-            </div>
+            </div> */}
 
-            <div className="col-xl-8 col-lg-8 col-md-12 col-12 tab-content">
+            <div className="col-xl-12 col-lg-12 col-md-12 col-12 tab-content">
               <img src={basiccleaning} alt="" />
               <h2>
                 <span>Floor Cleaning</span> -Gleaming Perfection
               </h2>
               <h6>
-                <b>
-                  Whether you have hardwood, tile, or vinyl floors, our floor
-                  cleaning service will restore their luster and shine. Our
-                  skilled technicians use industry-leading techniques and
-                  equipment to remove dirt, scuffs, and stains, leaving your
-                  floors looking immaculate and enhancing the overall appeal of
-                  your space.
-                </b>
+                Floors are a major focal point in any space, and keeping them
+                clean is essential to maintaining a polished, professional
+                appearance. Whether you have hardwood, tile, vinyl, or other
+                flooring materials, our floor cleaning service is designed to
+                bring out the natural beauty of your floors while preserving
+                their longevity. Using advanced techniques and top-of-the-line
+                equipment, we remove dirt, grime, scuff marks, and stains,
+                ensuring your floors look pristine.
               </h6>
+              <br />
+              <h6>
+                <b>We focus on:</b>
+              </h6>
+              <div className="cards-container">
+                {services.map((service, index) => (
+                  <div className="card" key={index}>
+                    <h3>{service.title}</h3>
+                    <p>{service.description}</p>
+                  </div>
+                ))}
+              </div>
+              <h6>
+                Our floor cleaning service can be customized to fit the specific
+                needs of your business or home. Whether it’s for high-traffic
+                areas or regular maintenance, we ensure your floors remain
+                spotless and vibrant, enhancing the overall appeal and
+                cleanliness of your space.
+              </h6>
+              <br />
 
-              <ol style={{ listStyle: "none", fontFamily: "myFirstFont" }}>
+              {/* <ol style={{ listStyle: "none", fontFamily: "myFirstFont" }}>
                 <li>
                   <b>Trained and Professional Staff</b>
                 </li>
@@ -106,7 +148,7 @@ function Floorcleaning() {
                 <li>
                   <b>Tailored Solutions</b>
                 </li>
-              </ol>
+              </ol> */}
 
               <a href="/contact-us">
                 <button className="booknow">Book Now</button>{" "}

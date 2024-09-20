@@ -7,6 +7,28 @@ import basiccleaning from "../../Assets/img/serv-2.png";
 import ContactSection from "../Contactsection";
 import { Helmet } from "react-helmet";
 function Toiletcleaning() {
+  const services = [
+    {
+      title: "Deep Cleaning and Disinfection",
+      description:
+        "Thorough cleaning and sanitization of all fixtures, ensuring that every surface is free from harmful bacteria and germs.",
+    },
+    {
+      title: "Odor Control Solutions",
+      description:
+        "Our odor control solutions ensure that your restroom stays fresh and inviting.",
+    },
+    {
+      title: "Stain Removal",
+      description:
+        "Effective removal of stains from tiles, grout, and other surfaces, leaving your restroom spotless.",
+    },
+    {
+      title: "Stocking and Replenishment",
+      description:
+        "Restocking essential supplies such as toilet paper, soap, and paper towels for your convenience.",
+    },
+  ];
   return (
     <>
       <Header />
@@ -24,77 +46,42 @@ function Toiletcleaning() {
       <section className="servicetab-section" style={{ padding: "100px 0" }}>
         <div className="container">
           <div className="row">
-            <div className="col-xl-4 col-lg-4 col-md-12 col-12">
-              <div className="tab-contain">
-                <h3>Categories</h3>
-                {ServicesData.map((tab, index) => (
-                  <div className="tab" key={index}>
-                    <a href={tab.link}>{tab.head}</a>
-                    <svg
-                      width="7"
-                      height="11"
-                      viewBox="0 0 7 11"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path d="M1 0.5L6 5.5L1 10.5" stroke="black" />
-                      <path d="M1 0.5L6 5.5L1 10.5" stroke="black" />
-                    </svg>
-                  </div>
-                ))}
-              </div>
-              <div className="greenbox" data-aos="fade-down">
-                <h3>
-                  Keep everything <br />
-                  clean with us
-                </h3>
-                <a href="/contact-us">
-                  <button className="booknow">Book Now</button>
-                </a>
-              </div>
-            </div>
-
-            <div className="col-xl-8 col-lg-8 col-md-12 col-12 tab-content">
+            <div className="col-xl-12 col-lg-12 col-md-12 col-12 tab-content">
               <img src={basiccleaning} alt="" />
               <h2>
                 <span>Toilet Cleaning</span> -Refreshing Cleanliness
               </h2>
               <h6>
-                <b>
-                  We know that a clean and hygienic restroom is essential for
-                  both your employees and visitors. Our dedicated team of
-                  professionals will ensure that your toilets are thoroughly
-                  cleaned and sanitized, leaving them fresh, germ-free, and
-                  ready for use.
-                </b>
+                {/* <b> */}
+                We understand that a clean and hygienic restroom is crucial for
+                the well-being and comfort of your employees, customers, and
+                visitors. That’s why our professional toilet cleaning service is
+                designed to maintain the highest standards of cleanliness. Our
+                experienced team uses industry-grade cleaning agents and
+                techniques to thoroughly clean and sanitize all areas, including
+                toilet bowls, seats, sinks, floors, and other high-touch
+                surfaces.
+                {/* </b> */}
               </h6>
-
-              <ol style={{ listStyle: "none", fontFamily: "myFirstFont" }}>
-                <li>
-                  <b>Trained and Professional Staff</b>
-                </li>
-                <li>
-                  <b>Environmentally Friendly Practices</b>
-                </li>
-                <li>
-                  <b>Flexible Scheduling</b>
-                </li>
-                <li>
-                  <b>Quality Assurance</b>
-                </li>
-                <li>
-                  <b>Competitive Pricing</b>
-                </li>
-                <li>
-                  <b>Reliable and Trustworthy</b>
-                </li>
-                <li>
-                  <b>Quality Assurance</b>
-                </li>
-                <li>
-                  <b>Tailored Solutions</b>
-                </li>
-              </ol>
+              <br />
+              <h6>
+                <b>We focus on:</b>
+              </h6>
+              <div className="cards-container">
+                {services.map((service, index) => (
+                  <div className="card" key={index}>
+                    <h3>{service.title}</h3>
+                    <p>{service.description}</p>
+                  </div>
+                ))}
+              </div>
+              <h6>
+                By maintaining a fresh, germ-free restroom, we help you create a
+                positive impression and a healthier environment. Whether you
+                need daily, weekly, or monthly cleaning, our flexible service
+                plans can be tailored to meet your specific requirements.
+              </h6>
+              <br />
 
               <a href="/contact-us">
                 <button className="booknow">Book Now</button>{" "}

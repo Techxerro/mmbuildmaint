@@ -10,6 +10,28 @@ import ContactSection from "../Contactsection";
 import { Helmet } from "react-helmet";
 
 function PressureWashing() {
+  const services = [
+    {
+      title: "Exterior Building Facades",
+      description:
+        "Remove dirt, algae, and other contaminants to restore your building’s original beauty.",
+    },
+    {
+      title: "Sidewalks and Walkways",
+      description:
+        "Ensure safe, clean pathways by removing dirt, gum, oil stains, and mildew.",
+    },
+    {
+      title: "Parking Lots and Driveways",
+      description:
+        "Enhance curb appeal and prolong the life of surfaces by removing oil, grease, and tire marks.",
+    },
+    {
+      title: "Decks, Patios, and Fences",
+      description:
+        "Revitalize wooden, concrete, or composite surfaces by eliminating dirt, mold, and grime buildup.",
+    },
+  ];
   return (
     <>
       <Header />
@@ -27,7 +49,7 @@ function PressureWashing() {
       <section className="servicetab-section" style={{ padding: "100px 0" }}>
         <div className="container">
           <div className="row">
-            <div className="col-xl-4 col-lg-4 col-md-12 col-12">
+            {/* <div className="col-xl-4 col-lg-4 col-md-12 col-12">
               <div className="tab-contain">
                 <h3>Categories</h3>
                 {ServicesData.map((tab, index) => (
@@ -55,24 +77,22 @@ function PressureWashing() {
                   <button className="booknow">Book Now</button>
                 </a>
               </div>
-            </div>
+            </div> */}
 
-            <div className="col-xl-8 col-lg-8 col-md-12 col-12 tab-content">
+            <div className="col-xl-12 col-lg-12 col-md-12 col-12 tab-content">
               <img src={basiccleaning} alt="" />
               <h2>
                 <span>Pressure Washing</span> -Reviving Your Surfaces
               </h2>
               <h6>
-                <b>
-                  Over time, dirt, grime, and mildew can build up on various
-                  surfaces, diminishing the overall appeal of your property. Our
-                  pressure washing service will restore the beauty of your
-                  exteriors, including sidewalks, parking lots, and building
-                  facades, bringing them back to their original shine.
-                </b>
+                Over time, dirt, grime, mold, and mildew can build up on various
+                surfaces, diminishing the overall appeal of your property. Our
+                pressure washing service will restore the beauty of your
+                exteriors, including sidewalks, parking lots, and building
+                facades, bringing them back to their original shine.
               </h6>
 
-              <ol style={{ listStyle: "none", fontFamily: "myFirstFont" }}>
+              {/* <ol style={{ listStyle: "none", fontFamily: "myFirstFont" }}>
                 <li>
                   <b>Trained and Professional Staff</b>
                 </li>
@@ -97,8 +117,27 @@ function PressureWashing() {
                 <li>
                   <b>Tailored Solutions</b>
                 </li>
-              </ol>
-
+              </ol> */}
+              <br />
+              <h6>
+                <b>We focus on:</b>
+              </h6>
+              <div className="cards-container">
+                {services.map((service, index) => (
+                  <div className="card" key={index}>
+                    <h3>{service.title}</h3>
+                    <p>{service.description}</p>
+                  </div>
+                ))}
+              </div>
+              <h6>
+                Whether it’s for commercial or residential properties, our
+                pressure washing service can enhance the look of your exteriors
+                and maintain their integrity for years to come. We offer
+                flexible scheduling and custom cleaning plans to suit your
+                specific needs, ensuring every surface shines like new.
+              </h6>
+              <br />
               <a href="/contact-us">
                 <button className="booknow">Book Now</button>{" "}
               </a>

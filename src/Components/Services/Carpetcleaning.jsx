@@ -8,6 +8,28 @@ import ContactSection from "../Contactsection";
 import { Helmet } from "react-helmet";
 
 function Carpetcleaning() {
+  const services = [
+    {
+      title: "Deep Cleaning",
+      description:
+        "Thorough cleaning process that penetrates deep into the fibers, removing ingrained dirt and stains.",
+    },
+    {
+      title: "Stain Removal",
+      description:
+        "Specialized treatment for tough stains, restoring the appearance of your carpets.",
+    },
+    {
+      title: "Allergen Reduction",
+      description:
+        "Eliminates dust mites, pollen, and allergens to improve air quality in your office.",
+    },
+    {
+      title: "Deodorization",
+      description:
+        "Effective treatments to eliminate unpleasant odors, leaving your carpets smelling fresh.",
+    },
+  ];
   return (
     <>
       <Header />
@@ -25,7 +47,7 @@ function Carpetcleaning() {
       <section className="servicetab-section" style={{ padding: "100px 0" }}>
         <div className="container">
           <div className="row">
-            <div className="col-xl-4 col-lg-4 col-md-12 col-12">
+            {/* <div className="col-xl-4 col-lg-4 col-md-12 col-12">
               <div className="tab-contain">
                 <h3>Categories</h3>
                 {ServicesData.map((tab, index) => (
@@ -53,24 +75,46 @@ function Carpetcleaning() {
                   <button className="booknow">Book Now</button>
                 </a>
               </div>
-            </div>
+            </div> */}
 
-            <div className="col-xl-8 col-lg-8 col-md-12 col-12 tab-content">
+            <div className="col-xl-12 col-lg-12 col-md-12 col-12 tab-content">
               <img src={basiccleaning} alt="" />
               <h2>
                 <span>Commercial Carpet Cleaning</span> -A Fresh Start
               </h2>
               <h6>
-                <b>
-                  Carpets can harbor dirt, stains, and allergens, affecting the
-                  air quality and overall cleanliness of your workspace. Our
-                  professional carpet cleaning service will rejuvenate your
-                  carpets, removing deep-seated dirt and leaving them fresh,
-                  soft, and odor-free.
-                </b>
+                Carpets can harbor dirt, stains, and allergens, negatively
+                impacting the air quality and overall cleanliness of your
+                workspace. Our professional carpet cleaning service is designed
+                to rejuvenate your carpets, effectively removing deep-seated
+                dirt, allergens, and odors. We use advanced cleaning techniques
+                and eco-friendly products to ensure your carpets not only look
+                great but also contribute to a healthier working environment.
               </h6>
+              <br />
+              <h6>
+                <b>We focus on:</b>
+              </h6>
+              <div className="cards-container">
+                {services.map((service, index) => (
+                  <div className="card" key={index}>
+                    <h3>{service.title}</h3>
+                    <p>{service.description}</p>
+                  </div>
+                ))}
+              </div>
+              <h6>
+                Investing in professional carpet cleaning not only enhances the
+                aesthetic appeal of your workspace but also prolongs the life of
+                your carpets. Our flexible scheduling options allow us to work
+                around your business hours, ensuring minimal disruption while
+                providing exceptional results. With our commitment to quality
+                and customer satisfaction, you can trust us to deliver a carpet
+                cleaning service that exceeds your expectations.
+              </h6>
+              <br />
 
-              <ol style={{ listStyle: "none", fontFamily: "myFirstFont" }}>
+              {/* <ol style={{ listStyle: "none", fontFamily: "myFirstFont" }}>
                 <li>
                   <b>Trained and Professional Staff</b>
                 </li>
@@ -95,7 +139,7 @@ function Carpetcleaning() {
                 <li>
                   <b>Tailored Solutions</b>
                 </li>
-              </ol>
+              </ol> */}
 
               <a href="/contact-us">
                 <button className="booknow">Book Now</button>{" "}
